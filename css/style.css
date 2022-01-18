@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'NeueKabel-Book';
+    src: url('../fonts/NeueKabel-Book.otf');
+}
+
+@font-face {
+    font-family: 'NeueKabel-Regular';
+    src: url('../fonts/NeueKabel.otf');
+}
+
+body {
+    font-family: 'NeueKabel-Regular', Helvetica, sans-serif;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    border: 2vh solid white;
+    background-color: #F2F2F2;
+    margin: auto;
+    padding: auto;
+}
+
+.bgtext {
+    font-family: 'NeueKabel-Book', Helvetica, sans-serif;
+    font-size: 60vh;
+    color: #707070;
+    opacity: 14%;
+    user-select: none;
+}
+
+.hello {
+    position: fixed;
+    top: -80vh;
+}
+
+.there {
+    position: fixed;
+    top: -12vh;
+}
+
+.topnav a {
+    float: right;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 50px;
+    color: black;
+    user-select:none;
+}
+
+#indextxt {
+    font-size: 10vh;
+    position: fixed;
+    top: 35vh;
+    left: 30%;
+}
