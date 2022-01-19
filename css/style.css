@@ -11,12 +11,28 @@
 body {
     font-family: 'NeueKabel-Regular', Helvetica, sans-serif;
     box-sizing: border-box;
-    width: 100vw;
-    height: 100vh;
-    border: 4vh solid white;
     background-color: #F2F2F2;
     margin: auto;
     padding: auto;
+    overflow-x: hidden;
+}
+
+#body_work {
+    height: 300vh;
+}
+
+.singlepage {
+    box-sizing: border-box;
+    border: 4vh solid white;
+    height: 100vh;
+    width: 100vw;
+}
+
+.workpage {
+    box-sizing: border-box;
+    border: 4vh solid white;
+    height: 300vh;
+    width: 100vw;
 }
 
 @media (orientation: portrait) {
@@ -165,7 +181,34 @@ body {
 }
 
 .contact {
-    top: -5vh;
+    top: 20vh;
+    font-size: 45vh;;
+}
+
+.work {
+    position: absolute;
+    top: -78vh;
+}
+
+.portraits {
+    position: absolute;
+    top: 60vh;
+    left: 10vw;
+    font-size: 40vh;
+    z-index: 90;
+}
+
+.posterdesign {
+    position: absolute;
+    top: 190vh;
+    font-size: 25vh;
+    z-index: 90;
+}
+
+.topnav {
+    position: fixed;
+    right: 4vh;
+    z-index: 100;
 }
 
 .topnav a {
@@ -179,8 +222,12 @@ body {
 }
 
 #navhome {
-    position: relative;
+    position: fixed;
+    display: flex;
     z-index: 100;
+    height: 8vh;
+    width: 8vh;
+    padding: 1vh 1vh;
 }
 
 #indextxt {
@@ -235,6 +282,24 @@ body {
     right: 30vh;
     bottom: 45vh;
     font-size: 3vh;
+}
+
+#portraits_titlecard {
+    position: absolute;
+    top: 110vh;
+    float: right;
+    right: 20vh;
+    width: auto;
+    height: 90vh;
+}
+
+#posterdes_titlecard {
+    position: absolute;
+    top: 213vh;
+    float: right;
+    right: 50vh;
+    width: auto;
+    height: 80vh;
 }
 
 }
