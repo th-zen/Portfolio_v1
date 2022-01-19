@@ -13,11 +13,133 @@ body {
     box-sizing: border-box;
     width: 100vw;
     height: 100vh;
-    border: 2vh solid white;
+    border: 4vh solid white;
     background-color: #F2F2F2;
     margin: auto;
     padding: auto;
 }
+
+@media (orientation: portrait) {
+
+body {
+    border: 4vw solid white;
+}
+
+.bgtext {
+    font-family: 'NeueKabel-Book', Helvetica, sans-serif;
+    font-size: 20vh;
+    position: fixed;
+    color: #707070;
+    opacity: 14%;
+    user-select: none;
+    z-index: 0;
+}
+    
+.hello {
+    top: -20vh;
+}
+    
+.there {
+    top: -1vh;
+}
+    
+.about {
+    top: -20vh;
+    left: 0;
+}
+    
+.contact {
+    font-size: 27vw;
+    bottom: -10vw;
+}
+
+.topnav {
+    position: fixed;
+    bottom: 6vw;
+    width: 92vw;
+    z-index: 100;
+}
+    
+.topnav a {
+    float: right;
+    width: 30.6vw;
+    text-align: center;
+    padding: auto;;
+    text-decoration: none;
+    font-size: 5vw;
+    color: black;
+    user-select:none;
+}
+    
+#navhome {
+    display: flex;
+    width: auto;
+    height: 10vw;
+    position: fixed;
+    left:45vw;
+    bottom: 15vw;
+    z-index: 100;
+}
+    
+#indextxt {
+    font-size: 5vh;
+    position: fixed;
+    top: 40vh;
+    left: 10vw;
+}
+    
+#abouttext {
+    font-size: 2vh;
+    position: fixed;
+    top: 65vh;
+    left: 10vw;
+    width: 80vw;
+    user-select: none;
+    z-index: 0;
+}
+    
+#portrait {
+    position: fixed;
+    top: 20vh;
+    left: 13vw;
+    height: auto;
+    width: 74vw;
+}
+    
+#email_icon {
+    position: fixed;
+    opacity: 30%;
+    width: auto;
+    height: 65vw;
+    left: -32vw;
+}
+    
+#mailtext {
+    position: fixed;
+    left: 40vw;
+    top: 26vw;
+    font-size: 4.5vw;
+}
+    
+#ig_icon {
+    position: fixed;
+    opacity: 30%;
+    width: auto;
+    height: 65vw;
+    right: -30vw;
+    top: 60vw;
+}
+    
+#igtext {
+    text-align: right;
+    position: fixed;
+    right: 33vw;
+    top: 80vw;
+    font-size: 4.5vw;
+}
+
+}
+@media (orientation: landscape) {
 
 .bgtext {
     font-family: 'NeueKabel-Book', Helvetica, sans-serif;
@@ -69,19 +191,19 @@ body {
 }
 
 #abouttext {
-    font-size: 3vh;
+    font-size: 1.5vw;
     position: fixed;
-    top: 40%;
-    left: 35%;
-    width: 50%;
+    top: 40vh;
+    left: 38vw;
+    width: 50vw;
 }
 
 #portrait {
     position: fixed;
-    top: 40%;
-    left: 10%;
-    height: 50vh;
-    width: auto;
+    top: 40vh;
+    left: 10vw;
+    height: auto;
+    width: 30vw;
 }
 
 #email_icon {
@@ -113,4 +235,6 @@ body {
     right: 30vh;
     bottom: 45vh;
     font-size: 3vh;
+}
+
 }
