@@ -108,24 +108,6 @@ body {
     opacity: 40%;
 }
     
-.sm_portrait {
-    position: absolute;
-    top: 140vh;
-    width: 100%;
-    text-align:right;
-    right: 90vh;
-    z-index: 100;
-}
-    
-.sm_posterdesign {
-    position: absolute;
-    top: 240vh;
-    width: 100%;
-    text-align: right;
-    right: 110vh;
-    z-index: 100;
-}
-    
 .link {
     color: #707070;
     opacity: 30%;
@@ -248,6 +230,7 @@ body {
     opacity: 14%;
     user-select: none;
     z-index: 0;
+    pointer-events: none;
 }
     
 .workpage {
@@ -318,24 +301,6 @@ body {
     opacity: 40%;
 }
     
-.sm_portrait {
-    position: absolute;
-    top: 140vh;
-    width: 100%;
-    text-align:right;
-    right: 90vh;
-    z-index: 100;
-}
-    
-.sm_posterdesign {
-    position: absolute;
-    top: 240vh;
-    width: 100%;
-    text-align: right;
-    right: 110vh;
-    z-index: 100;
-}
-    
 .link {
     color: #707070;
     opacity: 30%;
@@ -346,6 +311,7 @@ body {
     position: fixed;
     right: 4vh;
     z-index: 100;
+    top: 4vh;
 }
 
 .topnav a {
@@ -356,6 +322,11 @@ body {
     font-size: 3.8vh;
     color: black;
     user-select:none;
+}
+
+.carousel {
+    align-content: center;
+    top: 50%;
 }
 
 #navhome {
