@@ -17,29 +17,18 @@ body {
     overflow-x: hidden;
 }
 
-#body_work {
-    height: 300vh;
-}
-
 .singlepage {
     box-sizing: border-box;
     border: 4vh solid white;
+    text-align: left;
     height: 100vh;
     width: 100vw;
+    position:fixed;
 }
 
-.workpage {
-    box-sizing: border-box;
-    border: 4vh solid white;
-    height: 300vh;
-    width: 100vw;
-}
 
 @media (orientation: portrait) {
 
-body {
-    border: 4vw solid white;
-}
 
 .bgtext {
     font-family: 'NeueKabel-Book', Helvetica, sans-serif;
@@ -49,6 +38,13 @@ body {
     opacity: 14%;
     user-select: none;
     z-index: 0;
+}
+    
+.workpage {
+    box-sizing: border-box;
+    border: 4vh solid white;
+    height: 220vh;
+    width: 100vw;
 }
     
 .hello {
@@ -68,19 +64,88 @@ body {
     font-size: 27vw;
     bottom: -10vw;
 }
+    
+.work {
+    position: absolute;
+    top: -12vh;
+}
+
+.portraits {
+    position: absolute;
+    top: 90vh;
+    left: 10vw;
+    font-size: 20vw;
+    z-index: 90;
+}
+
+.posterdesign {
+    position: absolute;
+    top: 150vh;
+    font-size: 15vw;
+    z-index: 90;
+}
+
+.scrolldiv {
+    position:absolute;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    top: 75vh;
+}
+
+.scrolltxt {
+    font-size: 6vw;
+    user-select: none;
+    color: #707070;
+    opacity: 40%;
+    margin: 0;
+}
+    
+.scrollarrow {
+    width: auto;
+    height: 6vw;
+    color: #707070;
+    opacity: 40%;
+}
+    
+.sm_portrait {
+    position: absolute;
+    top: 140vh;
+    width: 100%;
+    text-align:right;
+    right: 90vh;
+    z-index: 100;
+}
+    
+.sm_posterdesign {
+    position: absolute;
+    top: 240vh;
+    width: 100%;
+    text-align: right;
+    right: 110vh;
+    z-index: 100;
+}
+    
+.link {
+    color: #707070;
+    opacity: 30%;
+    font-size: 5vh;
+} 
+    
+/**              **/
 
 .topnav {
     position: fixed;
     bottom: 6vw;
-    width: 92vw;
+    width: 100%;
     z-index: 100;
 }
     
 .topnav a {
     float: right;
     width: 30.6vw;
-    text-align: center;
-    padding: auto;;
+    padding: auto;
+    text-align:center;
     text-decoration: none;
     font-size: 5vw;
     color: black;
@@ -153,6 +218,24 @@ body {
     top: 80vw;
     font-size: 4.5vw;
 }
+    
+#portraits_titlecard {
+    position: absolute;
+    top: 110vh;
+    float: right;
+    right: 20vh;
+    width: 40vw;
+    height: auto;
+}
+
+#posterdes_titlecard {
+    position: absolute;
+    top: 165vh;
+    float: right;
+    right: 18vh;
+    width: 40vw;
+    height: auto;
+}
 
 }
 @media (orientation: landscape) {
@@ -160,11 +243,18 @@ body {
 .bgtext {
     font-family: 'NeueKabel-Book', Helvetica, sans-serif;
     font-size: 60vh;
-    position: fixed;
+    position: absolute;
     color: #707070;
     opacity: 14%;
     user-select: none;
     z-index: 0;
+}
+    
+.workpage {
+    box-sizing: border-box;
+    border: 4vh solid white;
+    height: 300vh;
+    width: 100vw;
 }
 
 .hello {
@@ -187,7 +277,7 @@ body {
 
 .work {
     position: absolute;
-    top: -78vh;
+    top: -75vh;
 }
 
 .portraits {
@@ -204,6 +294,53 @@ body {
     font-size: 25vh;
     z-index: 90;
 }
+
+.scrolldiv {
+    position:absolute;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    top: 80vh;
+}
+
+.scrolltxt {
+    font-size: 5vh;
+    user-select: none;
+    color: #707070;
+    opacity: 40%;
+    margin: 0;
+}
+    
+.scrollarrow {
+    width: auto;
+    height: 6vh;
+    color: #707070;
+    opacity: 40%;
+}
+    
+.sm_portrait {
+    position: absolute;
+    top: 140vh;
+    width: 100%;
+    text-align:right;
+    right: 90vh;
+    z-index: 100;
+}
+    
+.sm_posterdesign {
+    position: absolute;
+    top: 240vh;
+    width: 100%;
+    text-align: right;
+    right: 110vh;
+    z-index: 100;
+}
+    
+.link {
+    color: #707070;
+    opacity: 30%;
+    font-size: 5vh;
+} 
 
 .topnav {
     position: fixed;
